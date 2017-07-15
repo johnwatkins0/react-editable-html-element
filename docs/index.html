@@ -3,23 +3,41 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>react-editable-html-element | docs</title>
 <link href="dist/style.css" media="all" rel="stylesheet" />
 
 <main>
   <article>
     <section>
       <header>
+        Description
+      </header>
+      <div>
+        Example
+      </div>
+      <div>
+        Component with props
+      </div>
+    </section>
+    <section>
+      <header>
         <h1>No props (all defaults)</h1>
       </header>
       <div data-editable-element></div>
-      <div data-escape-html="<div data-editable-element></div>"></div>
+      <code data-escape-html="<EditableElement />
+">
+      </code>
     </section>
     <section>
       <header>
         <h1>Pass an initial value</h1>
       </header>
       <div data-editable-element data-value="Hello! Click me to edit this text."></div>
-      <div data-escape-html='<div data-editable-element data-value="Hello! Click me to edit this text."></div>'></div>
+      <code data-escape-html='<EditableElement
+  value="Hello! Click me to edit this text."
+/>
+'>
+      </code>
     </section>
   </article>
 </main>

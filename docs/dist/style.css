@@ -5987,24 +5987,41 @@ article {
 section {
   display: flex;
   align-items: center;
-  padding-top: 1.5rem;
-  padding-bottom: 4.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   position: relative;
   width: 100%;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
   flex: 0 0 100%;
-  max-width: 100%; }
+  max-width: 100%;
+  border-right: 1px solid #dee2e6;
+  border-left: 1px solid #dee2e6; }
+  section:first-of-type {
+    border-bottom: 1px solid #adb5bd;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    background: #343a40;
+    color: white;
+    font-weight: 600; }
+  section:nth-of-type(odd):not(:first-of-type) {
+    background: #e9ecef; }
   section > div,
+  section > code,
   section header {
     flex: 0 0 100%;
     max-width: 100%; }
     @media screen and (min-width: 768px) {
       section > div,
+      section > code,
       section header {
         flex: 0 0 33.33333%;
         max-width: 33.33333%; } }
 
 h1 {
   font-size: 1.122rem; }
+
+code {
+  display: block;
+  white-space: pre-wrap; }
