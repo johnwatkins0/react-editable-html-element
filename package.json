@@ -5,7 +5,7 @@
   "main": "src/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johnwatkins0/react-editable-element.git"
+    "url": "git+https://github.com/johnwatkins0/react-editable-html-element.git"
   },
   "keywords": [
     "react",
@@ -14,9 +14,9 @@
   "author": "John Watkins",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/johnwatkins0/react-editable-element/issues"
+    "url": "https://github.com/johnwatkins0/react-editable-html-element/issues"
   },
-  "homepage": "https://github.com/johnwatkins0/react-editable-element#readme",
+  "homepage": "https://github.com/johnwatkins0/react-editable-html-element#readme",
   "eslintConfig": {
     "parser": "babel-eslint",
     "env": {
