@@ -14,7 +14,7 @@ class EditableElement extends React.Component {
 
       return new Error(
         `Invalid prop \`${propName}\` supplied to` +
-          ` \`${componentName}\`. Allowed elements: ${htmlTags.join(', ')}`
+          ` \`${componentName}\`. Allowed elements: ${htmlTags.join(', ')}`,
       );
     },
     elementClassName: PropTypes.string,
@@ -129,8 +129,9 @@ class EditableElement extends React.Component {
         style={this.props.inputStyle}
         value={this.state.value}
         placeholder={this.props.placeholder}
-        onChange={(event) => this.onChange(event.target.value)}
+        onChange={event => this.onChange(event.target.value)}
         onKeyDown={this.onKeyDown}
+        onBlur={() => this.setState({ editable: false })}
       />
     );
   }

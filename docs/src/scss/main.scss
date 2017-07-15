@@ -1,0 +1,42 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap-reboot";
+
+body {
+  background: rgba($black, 0.1);
+}
+
+main {
+  min-height: 100vh;
+  background: white;
+  @include make-container;
+  @include make-container-max-widths;
+}
+
+article {
+  padding: 1.5rem;
+  @include make-row;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 4.5rem;
+  @include make-col-ready;
+  @include make-col(12);
+
+  > div,
+  header {
+    @include make-col(12);
+    @media screen and (min-width: map-get($grid-breakpoints, "md")) {
+       @include make-col(4);
+    }
+  }
+}
+
+h1 {
+  font-size: 1.122rem;
+}

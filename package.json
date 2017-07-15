@@ -25,13 +25,8 @@
     },
     "extends": [
       "eslint:recommended",
-      "airbnb",
-      "google"
+      "airbnb"
     ],
-    "globals": {
-      "import": true,
-      "wpData": true
-    },
     "parserOptions": {
       "ecmaFeatures": {
         "experimentalObjectRestSpread": true,
@@ -43,16 +38,7 @@
       "react"
     ],
     "rules": {
-      "no-console": [
-        "error",
-        {
-          "allow": [
-            "error"
-          ]
-        }
-      ],
-      "react/jsx-filename-extension": 0,
-      "require-jsdoc": 0
+      "react/jsx-filename-extension": 0
     }
   },
   "devDependencies": {
@@ -63,15 +49,24 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
+    "css-loader": "^0.28.4",
     "eslint": "3.19.0",
     "eslint-config-airbnb": "^15.0.1",
-    "eslint-config-google": "^0.8.0",
     "eslint-plugin-import": "^2.6.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
-    "eslint-plugin-react": "^7.1.0"
+    "eslint-plugin-react": "^7.1.0",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "node-sass": "^4.5.3",
+    "postcss-loader": "^2.0.6",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.3.0"
   },
   "dependencies": {
+    "bootstrap": "git://github.com/twbs/bootstrap.git#v4-dev",
+    "he": "^1.1.1",
     "prop-types": "^15.5.10",
-    "react": "^15.6.1"
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   }
 }
