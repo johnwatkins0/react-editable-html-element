@@ -47,9 +47,8 @@ class EditableElement extends React.Component {
 
     this.state = {
       value: this.props.value,
-      editable: this.props.allowEditing === true
-        ? this.props.value === '' || this.props.editable
-        : false,
+      editable:
+        this.props.allowEditing === true ? this.props.value === '' || this.props.editable : false,
     };
 
     this.renderStaticElement = this.renderStaticElement.bind(this);
@@ -62,6 +61,12 @@ class EditableElement extends React.Component {
   componentDidMount() {
     if (this.state.editable) {
       this.input.focus();
+    }
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.value !== this.state.value) {
+      this.setState({ value: nextProps.value });
     }
   }
 

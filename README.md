@@ -17,7 +17,7 @@ import EditableElement from 'react-editable-html-element';
 
 const YourComponent = () => {
   const yourProps = {
-    // See Prop section
+    // See Props section
   };
 
   return <EditableElement {...yourProps} />;

@@ -21,6 +21,7 @@ const main = {
     ],
   },
   target: 'web',
+  devtool: 'source-maps',
 };
 
 const styleCSSExtractor = new ExtractTextPlugin('style.css');
@@ -46,34 +47,16 @@ const docs = {
       },
       {
         test: /\.scss$/,
-        exclude: [/modules/],
         use: styleCSSExtractor.extract({
           fallback: 'style-loader',
           use: ['css-loader', 'postcss-loader', 'sass-loader'],
-        }),
-      },
-      {
-        test: /\.scss$/,
-        include: [/modules/],
-        use: styleCSSExtractor.extract({
-          fallback: 'style-loader',
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                modules: true,
-                localIdentName: '[local]--[hash:base64:5]',
-              },
-            },
-            { loader: 'postcss-loader' },
-            { loader: 'sass-loader' },
-          ],
         }),
       },
     ],
   },
   target: 'web',
   plugins: [styleCSSExtractor],
+  devtool: 'source-maps',
 };
 
 export default [main, docs];

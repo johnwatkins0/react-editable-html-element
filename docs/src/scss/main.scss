@@ -1,63 +1,98 @@
 @import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
+@import 'variables';
+@import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/bootstrap";
 @import "~bootstrap/scss/bootstrap-reboot";
 
-body {
-  background: rgba($black, 0.1);
-}
-
 main {
-  min-height: 100vh;
-  background: white;
+  background: $white;
   @include make-container;
-  @include make-container-max-widths;
+  padding-top: 3rem;
 }
 
 article {
-  padding: 1.5rem;
   @include make-row;
+  @include box-shadow;
 }
 
 section {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   padding-top: 3rem;
   padding-bottom: 3rem;
   @include make-col-ready;
   @include make-col(12);
-  border-right: 1px solid $gray-300;
-  border-left: 1px solid $gray-300;
+  border-right: 1px solid $gray-200;
+  border-left: 1px solid $gray-200;
 
   &:first-of-type {
-    border-bottom: 1px solid $gray-500;
+    border-bottom: 1px solid $gray-200;
     padding-bottom: 1rem;
     padding-top: 1rem;
-    background: $gray-800;
+    background: $gray-700;
     color: white;
     font-weight: 600;
   }
 
-  &:nth-of-type(odd):not(:first-of-type) {
-    background: $gray-200;
+  &:last-of-type {
+    border-bottom: 1px solid $gray-200;
   }
 
-   > div,
-  > code,
+  &:nth-of-type(odd):not(:first-of-type) {
+    background-color: $gray-100;
+  }
+
+  > div,
   header {
+    padding: 0.75rem 1.5rem;
     @include make-col(12);
-    @media screen and (min-width: map-get($grid-breakpoints, "md")) {
-       @include make-col(4);
+  }
+  @media screen and (min-width: map-get($grid-breakpoints, "md")) {
+    header {
+      @include make-col(2);
+    }
+
+    > div {
+      @include make-col(4);
+    }
+
+    > div:last-of-type {
+      @include make-col(6);
     }
   }
-}
-
-h1 {
-  font-size: 1.122rem;
 }
 
 code {
   display: block;
   white-space: pre-wrap;
+  padding: 0.25rem;
+}
+
+[data-reactroot] {
+  width: 100%;
+}
+
+.page-header {
+  background: $gray-900;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3rem;
+  z-index: 9999;
+
+  h5 {
+    margin-bottom: 0;
+    color: $white;
+  }
+
+  a {
+    color: $white;
+  }
 }
