@@ -11,6 +11,10 @@ main {
   padding-top: 3rem;
 }
 
+button {
+  cursor: pointer;
+}
+
 article {
   @include make-row;
   @include box-shadow;
@@ -95,4 +99,8 @@ code {
   a {
     color: $white;
   }
+}
+
+.articleDocs {
+  padding: 1.5rem;
 }
