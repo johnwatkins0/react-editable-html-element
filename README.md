@@ -1,7 +1,7 @@
 # react-editable-html-element
 Allows HTML elements to be modified in place by changing them into inputs when clicked.
 
-[Examples](https://johnwatkins0.github.io/react-editable-html-element/)
+[Examples](https://johnwatkins0.github.io/react-editable-html-element/#examples)
 
 ## Install
 

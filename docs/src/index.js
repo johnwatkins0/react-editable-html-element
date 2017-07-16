@@ -4,6 +4,7 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import { tomorrowNightEighties } from 'react-syntax-highlighter/dist/styles';
 import ReactMarkdown from 'react-remarkable';
 import smoothScroll from 'smooth-scroll';
+import highlight from 'highlight.js';
 
 import examples from './examples';
 
@@ -103,7 +104,28 @@ class Site extends React.Component {
     if (this.state.docsSource.length) {
       return (
         <article className="articleDocs">
-          <ReactMarkdown source={this.state.docsSource} />
+          <ReactMarkdown
+            source={this.state.docsSource}
+            options={{
+              highlight: (str, lang) => {
+                if (lang && highlight.getLanguage(lang)) {
+                  try {
+                    return highlight.highlight(lang, str).value;
+                  } catch (err) {
+                    // noop
+                  }
+                }
+
+                try {
+                  return highlight.highlightAuto(str).value;
+                } catch (err) {
+                  // noop
+                }
+
+                return '';
+              },
+            }}
+          />
         </article>
       );
     }

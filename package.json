@@ -67,6 +67,7 @@
     "bootstrap": "git://github.com/twbs/bootstrap.git#v4-dev",
     "fs": "0.0.1-security",
     "he": "^1.1.1",
+    "highlight.js": "^9.12.0",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
