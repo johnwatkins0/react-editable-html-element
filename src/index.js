@@ -90,8 +90,9 @@ class EditableElement extends React.Component {
     this.setState({ value });
   }
 
-  onClick() {
+  onClick(event) {
     if (this.props.allowEditing === true) {
+      event.preventDefault();
       this.setState({ editable: true });
     }
   }
