@@ -7,7 +7,11 @@ Allows HTML elements to be modified in place by changing them into inputs when c
 ## Install
 
 ```
-npm install --save react-editable-html-elements
+npm install react-editable-html-elements
+```
+
+```
+yarn add react-editable-html-elements
 ```
 
 ## Usage
