@@ -1,1 +1,0 @@
-{"dependencies":[],"generated":{"js":"module.exports=function(s){return{aliases:[\"console\"],contains:[{className:\"meta\",begin:\"^\\\\s{0,3}[\\\\w\\\\d\\\\[\\\\]()@-]*[>%$#]\",starts:{end:\"$\",subLanguage:\"bash\"}}]}};"},"hash":"b686a96d5c58bf2d035ec827a4f1ca90"}

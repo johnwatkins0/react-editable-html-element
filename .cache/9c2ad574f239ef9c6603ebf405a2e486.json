@@ -1,1 +1,0 @@
-{"dependencies":[{"name":"../../modules/es6.object.assign","loc":{"line":1,"column":8}},{"name":"../../modules/_core","loc":{"line":2,"column":25}}],"generated":{"js":"require(\"../../modules/es6.object.assign\"),module.exports=require(\"../../modules/_core\").Object.assign;"},"hash":"d3c80acca4ef2f54e75013e7c1aefe0d"}

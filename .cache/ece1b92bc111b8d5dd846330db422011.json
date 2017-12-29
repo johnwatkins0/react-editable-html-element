@@ -1,1 +1,0 @@
-{"dependencies":[],"generated":{"js":"module.exports=function(e){return{contains:[{className:\"meta\",begin:/^([\\w.-]+|\\s*#_)=>/,starts:{end:/$/,subLanguage:\"clojure\"}}]}};"},"hash":"8b96b47bb7f494b3f18d57d6eb967d08"}

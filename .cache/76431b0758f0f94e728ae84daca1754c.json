@@ -1,1 +1,0 @@
-{"dependencies":[],"generated":{"js":"module.exports=function(n){return{subLanguage:\"xml\",contains:[{begin:\"<%\",end:\"%>\",subLanguage:\"vbscript\"}]}};"},"hash":"56fccbd789851906a417fe06b5281aa2"}

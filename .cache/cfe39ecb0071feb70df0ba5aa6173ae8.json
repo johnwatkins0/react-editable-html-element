@@ -1,1 +1,0 @@
-{"dependencies":[],"generated":{"js":"module.exports = function(hljs) {\n  return {\n    subLanguage: 'xml',\n    contains: [\n      hljs.COMMENT('<%#', '%>'),\n      {\n        begin: '<%[%=-]?', end: '[%-]?%>',\n        subLanguage: 'ruby',\n        excludeBegin: true,\n        excludeEnd: true\n      }\n    ]\n  };\n};"},"hash":"a7178ded58e42730cd3b17581c92ac8b"}

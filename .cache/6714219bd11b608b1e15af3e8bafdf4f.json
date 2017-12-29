@@ -1,1 +1,0 @@
-{"dependencies":[],"generated":{"js":"module.exports = function(hljs) {\n  return {\n    aliases: ['console'],\n    contains: [\n      {\n        className: 'meta',\n        begin: '^\\\\s{0,3}[\\\\w\\\\d\\\\[\\\\]()@-]*[>%$#]',\n        starts: {\n          end: '$', subLanguage: 'bash'\n        }\n      },\n    ]\n  }\n};"},"hash":"217bd9d649e3cf1d23a6d55fa504534c"}
