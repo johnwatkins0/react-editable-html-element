@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "description": "Allows HTML elements to be modified in place by changing them into inputs when clicked.",
   "main": "src/",
+  "scripts": {
+    "start": "parcel example/src/index.html -d example -o --public-url /react-editable-html-element/example/",
+    "build": "parcel build example/src/index.html -d example --public-url /react-editable-html-element/example/",
+    "lint": "eslint src",
+    "prepare": "npm run build",
+    "pretest": "npm run lint",
+    "test": "jest"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/johnwatkins0/react-editable-html-element.git"
@@ -17,63 +25,27 @@
     "url": "https://github.com/johnwatkins0/react-editable-html-element/issues"
   },
   "homepage": "https://github.com/johnwatkins0/react-editable-html-element#readme",
-  "eslintConfig": {
-    "parser": "babel-eslint",
-    "env": {
-      "browser": true,
-      "es6": true
-    },
-    "extends": [
-      "eslint:recommended",
-      "airbnb"
-    ],
-    "parserOptions": {
-      "ecmaFeatures": {
-        "experimentalObjectRestSpread": true,
-        "jsx": true
-      },
-      "sourceType": "module"
-    },
-    "plugins": [
-      "react"
-    ],
-    "rules": {
-      "react/jsx-filename-extension": 0
-    }
-  },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.25.0",
-    "babel-eslint": "^7.2.3",
-    "babel-loader": "^7.1.0",
+    "babel-eslint": "^8.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-1": "^6.24.1",
-    "css-loader": "^0.28.4",
-    "eslint": "3.19.0",
-    "eslint-config-airbnb": "^15.0.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "4.14.0",
     "eslint-plugin-import": "^2.6.0",
-    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-jest": "^21.5.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.1.0",
-    "extract-text-webpack-plugin": "^3.0.0",
-    "node-sass": "^4.5.3",
-    "postcss-loader": "^2.0.6",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.18.2",
-    "webpack": "^3.3.0"
+    "jest": "^22.0.4",
+    "parcel-bundler": "^1.3.1",
+    "react-test-renderer": "^16.2.0"
   },
   "dependencies": {
-    "bootstrap": "git://github.com/twbs/bootstrap.git#v4-dev",
-    "fs": "0.0.1-security",
-    "he": "^1.1.1",
-    "highlight.js": "^9.12.0",
     "prop-types": "^15.5.10",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-markdown": "^2.5.0",
-    "react-remarkable": "^1.1.1",
-    "react-syntax-highlighter": "^5.6.2",
-    "smooth-scroll": "^11.1.0"
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-syntax-highlighter": "^6.1.1"
   }
 }

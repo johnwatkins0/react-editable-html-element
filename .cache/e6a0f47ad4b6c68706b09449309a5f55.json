@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"./SyntheticEvent","loc":{"line":11,"column":29}}],"generated":{"js":"\"use strict\";var a=require(\"./SyntheticEvent\"),t={clipboardData:function(a){return\"clipboardData\"in a?a.clipboardData:window.clipboardData}};function r(t,r,i,n){return a.call(this,t,r,i,n)}a.augmentClass(r,t),module.exports=r;"},"hash":"a3339b78df8a82bee8634921476ea6b1"}

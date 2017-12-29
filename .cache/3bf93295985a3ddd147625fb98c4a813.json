@@ -1,0 +1,1 @@
+{"dependencies":[],"generated":{"js":"\"use strict\";var e={color:!0,date:!0,datetime:!0,\"datetime-local\":!0,email:!0,month:!0,number:!0,password:!0,range:!0,search:!0,tel:!0,text:!0,time:!0,url:!0,week:!0};function t(t){var a=t&&t.nodeName&&t.nodeName.toLowerCase();return\"input\"===a?!!e[t.type]:\"textarea\"===a}module.exports=t;"},"hash":"b3c298c11a709ff44719ac429d99d9be"}

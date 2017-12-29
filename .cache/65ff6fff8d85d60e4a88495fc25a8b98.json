@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"./EventPluginHub","loc":{"line":11,"column":29}}],"generated":{"js":"\"use strict\";var e=require(\"./EventPluginHub\");function n(n){e.enqueueEvents(n),e.processEventQueue(!1)}var t={handleTopLevel:function(t,u,r,s){n(e.extractEvents(t,u,r,s))}};module.exports=t;"},"hash":"1780eba4a5bc61c20f01fc9600e59afc"}

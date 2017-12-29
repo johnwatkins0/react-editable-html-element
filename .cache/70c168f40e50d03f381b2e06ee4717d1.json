@@ -1,0 +1,1 @@
+{"dependencies":[],"generated":{"js":"module.exports=function(n){return{contains:[{className:\"attribute\",begin:/</,end:/>/},{begin:/::=/,starts:{end:/$/,contains:[{begin:/</,end:/>/},n.C_LINE_COMMENT_MODE,n.C_BLOCK_COMMENT_MODE,n.APOS_STRING_MODE,n.QUOTE_STRING_MODE]}}]}};"},"hash":"9c433448a0605c94028386481a44a04e"}

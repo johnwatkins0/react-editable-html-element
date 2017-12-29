@@ -1,0 +1,1 @@
+{"dependencies":[],"generated":{"js":"module.exports = function(hljs) {\n  return {\n    contains: [\n      {\n        className: 'meta',\n        begin: /^([\\w.-]+|\\s*#_)=>/,\n        starts: {\n          end: /$/,\n          subLanguage: 'clojure'\n        }\n      }\n    ]\n  }\n};"},"hash":"c8d5a6f015e7c9cc7b49119819472248"}

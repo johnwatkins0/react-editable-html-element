@@ -1,0 +1,1 @@
+{"dependencies":[],"generated":{"js":"module.exports = function(hljs) {\n  return {\n    subLanguage: 'xml',\n    contains: [\n      {\n        begin: '<%', end: '%>',\n        subLanguage: 'vbscript'\n      }\n    ]\n  };\n};"},"hash":"e5b966e6f92e232ea0b0b9c15afefa81"}

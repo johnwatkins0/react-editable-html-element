@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`All defaults renders correctly. 1`] = `
+<input
+  className=""
+  onBlur={[Function]}
+  onChange={[Function]}
+  onKeyDown={[Function]}
+  placeholder="Enter text"
+  style={Object {}}
+  value=""
+/>
+`;
+
+exports[`An editable h1 renders correctly. 1`] = `
+<h1
+  className=""
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "Click me to edit this text",
+    }
+  }
+  onClick={[Function]}
+  style={Object {}}
+/>
+`;
+
+exports[`An editable h1 with custom styles renders correctly. 1`] = `
+<h1
+  className=""
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "Click me to edit this text",
+    }
+  }
+  onClick={[Function]}
+  style={Object {}}
+/>
+`;
+
+exports[`An editable with an onchange override renders correctly. 1`] = `
+<div>
+  <input
+    className=""
+    onBlur={[Function]}
+    onChange={[Function]}
+    onKeyDown={[Function]}
+    placeholder="Enter text"
+    style={Object {}}
+    value=""
+  />
+  <div>
+    The current value is 
+    ""
+  </div>
+</div>
+`;
+
+exports[`Element with an initial value renders correctly. 1`] = `
+<div
+  className=""
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "Click me to edit this text.",
+    }
+  }
+  onClick={[Function]}
+  style={Object {}}
+/>
+`;

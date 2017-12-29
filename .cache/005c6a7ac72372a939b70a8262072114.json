@@ -1,0 +1,1 @@
+{"dependencies":[],"generated":{"js":"module.exports=function(e){return{subLanguage:\"xml\",contains:[e.COMMENT(\"<%#\",\"%>\"),{begin:\"<%[%=-]?\",end:\"[%-]?%>\",subLanguage:\"ruby\",excludeBegin:!0,excludeEnd:!0}]}};"},"hash":"a9273fac02e3764476e204ea52f00082"}
